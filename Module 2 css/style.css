@@ -1,0 +1,123 @@
+/* body {
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto Mono", monospace;
+} */
+
+.title {
+  /* color: rgba(67, 187, 73, 0.438); */
+  /* color: #6A9DC4; */
+  font-size: 60px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+  background: linear-gradient(45deg, red, rgb(54, 180, 54));
+  /* background: linear-gradient(to top, red, green); */
+  /* background-color: yellow; */
+}
+
+.description {
+  color: chocolate;
+  line-height: 1.5em;
+}
+
+#test {
+  color: blue;
+}
+
+p {
+  color: goldenrod;
+}
+
+p {
+  color: cyan;
+}
+/* .box {
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  padding-left: 30px;
+  padding-top: 30px;
+  margin: 100px;
+  background-color: red;
+  box-shadow: 4px 4px 8px black;
+} */
+.test {
+  /* padding: 50px; */
+  background-color: red;
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.child {
+  padding: 20px;
+  background-color: green;
+  width: 50%;
+  height: 100vh;
+}
+.first {
+  /* display: inline; */
+  width: 200px;
+  height: 150px;
+  background-color: red;
+  float: left;
+}
+.second {
+  /* display: inline; */
+  width: 200px;
+  height: 150px;
+  background-color: green;
+  float: left;
+}
+.box{
+  height: 150px;
+  width: 200px;
+  border: 1px solid black;
+  /* margin: 2px; */
+  font-size: 25px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: row-reverse;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box1{
+  background-color: blue;
+  position: absolute;
+  /* z-index: -1; */
+}
+.box2{
+  background-color: red;
+  /* margin-top: 20px; */
+  /* position: relative; */
+  position: fixed;
+}
+.box3{
+  background-color: green;
+  margin-top: 20px;
+}
+
+.green{
+  width: 450px;
+  background-color: green;
+  height: 250px;
+  margin: 50px;
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+}
+
+.red{
+  width: 120px;
+  background-color: red;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 32%;
+  left: 32%;
+}
