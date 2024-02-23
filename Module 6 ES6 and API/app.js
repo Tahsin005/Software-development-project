@@ -114,39 +114,74 @@
 
 /** API */
 
-fetch("https://fakestoreapi.com/products/1").then((res) => res.json()).then((data) =>{
-    console.log(data);
-}).catch((err) => {
-    console.log(err);
-});
+// fetch("https://fakestoreapi.com/products/1")
+// .then((res) => res.json())
+// .then((data) =>{
+//     console.log(data);
+// }).catch((err) => {
+//     console.log(err);
+// });
 
 
 /** asyncronus behaviour */
 
-console.log(1);
-console.log(2);
-console.log(3);
-console.log(4);
-// console.log(5);
-name(5)
-console.log(6);
-console.log(7);
-console.log(8);
-console.log(9);
+// console.log(1);
+// console.log(2);
+// console.log(3);
+// console.log(4);
+// // console.log(5);
+// name(5)
+// console.log(6);
+// console.log(7);
+// console.log(8);
+// console.log(9);
 
-function name (x) {
-    setTimeout(() => console.log(x));
-    fetch("https://fakestoreapi.com/products/1")
-    .then((res) => res.json())
-    .then((data) =>{
+// function name (x) {
+//     setTimeout(() => console.log(x));
+//     fetch("https://fakestoreapi.com/products/1")
+//     .then((res) => res.json())
+//     .then((data) =>{
+//         console.log(data);
+//     }).catch((err) => {
+//         console.log(err);
+//     });
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+/** Concept of promise */
+// const getData = new Promise(function(resolve, reject) {
+//     return reject("Resolved");
+// });
+
+
+// getData.then((data) => console.log(data)).catch((err) => console.log("Rejected"));
+
+
+
+
+/** Now fetching the data using async await */
+
+const loadData = async() => {
+    try {
+        const response = await fetch("https://fakestoreapi.com/products/1");
+
+        const data = await response.json();
         console.log(data);
-    }).catch((err) => {
-        console.log(err);
-    });
-
+    } catch (error) {
+        // console.log("Promis rejected");
+        console.log(error);
+    }
 }
 
-
-
-
-
+loadData();
